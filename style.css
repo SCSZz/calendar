@@ -5,7 +5,7 @@
 
 body{
     background-image:url('pic.jpg');
-    background-size:fill;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 @font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
@@ -89,8 +89,8 @@ body{
 
 }
 .overlay{
-    width:100vw;
-    height:100%;
+    width:98.7vw;
+    height:auto;
     background-color: rgba(0, 0, 0, 0.564);
 }
 
@@ -194,13 +194,13 @@ ul li{
 
     .overlay{
         width:100vw;
-        height:130%;
+        height:auto;
         background-color: rgba(0, 0, 0, 0.564);
     }
 
     #delete {
         margin-left:2vw;
-        width:110px;
+        width:100px;
         height:10px;
     }
 

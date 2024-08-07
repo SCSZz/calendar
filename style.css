@@ -178,7 +178,6 @@ ul li{
     .button a {
         border:3px;
         background-color:rgb(207, 216, 43);
-        box-shadow: 5px 6px 0 rgb(246, 255, 120);
         color:white;
         font-weight:bold;
         text-align:center;
@@ -209,6 +208,37 @@ ul li{
         height:10px;
     }
     
+    .border p {
+        margin-left:2vw;
+        font-size: 15px;
+        color:rgb(0, 0, 0);
+        text-transform:uppercase;
+        font-family:ubuntu;
+    }
+
+    ul li button,ul li a {
+        display:block;
+        font-size:10px;
+        color:white;
+        text-decoration:none;
+        width:20vw;
+        font-family:ubuntu;
+        text-transform:uppercase;
+        transition:0.5s;
+        height:60px;
+        align-content: center;
+    }
+
+    body{
+        background-image:url('pic.jpg');
+        background-size:cover;
+    }
+
+    .overlay{
+        height:100%;
+        margin:0;
+        background-color: rgba(0, 0, 0, 0.564);
+    }
 
 }
 

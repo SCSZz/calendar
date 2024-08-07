@@ -2,13 +2,7 @@
     padding:0px;
     margin:0px;
 }
-body,html{
-    margin:0;
-    padding:0;
-    height:100%;
-    width:100%;
-    overflow:hidden;
-}
+
 body{
     background-image:url('pic.jpg');
     background-size:cover;
@@ -242,6 +236,14 @@ ul li{
         background-image:url('pic.jpg');
         background-size:cover;
         background-repeat:no-repeat;
+    }
+
+    body,html{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+        overflow:hidden;
     }
 
 }

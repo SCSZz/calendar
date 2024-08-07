@@ -5,7 +5,7 @@
 
 body{
     background-image:url('pic.jpg');
-    background-size:fill;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 @font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
@@ -157,6 +157,7 @@ ul li{
 }
 
 #delete {
+    margin-left:48vw;
     width:8%;
     height:4%;
 }
@@ -181,15 +182,22 @@ ul li{
         box-shadow: 5px 6px 0 rgb(246, 255, 120);
         color:white;
         font-weight:bold;
-        padding:15px;
+        padding:18px;
         text-align:center;
         text-decoration:none;
         border-radius:20px;
         margin-left:2vw;
-        font-size:10px;
+        font-size:13px;
         margin-bottom:20px;
         font-family:ubuntu;
         transition:0.5s;
+        border-width:200px;
+    }
+
+    #delete {
+        margin-left:2vw;
+        width:8%;
+        height:4%;
     }
     
 
@@ -212,6 +220,11 @@ ul li{
         margin-bottom:20px;
         font-family:ubuntu;
         transition:0.5s;
-        border-width: 100px;
+        border-width:200px;
+    }
+    #delete {
+        margin-left:2vw;
+        width:8%;
+        height:4%;
     }
 }

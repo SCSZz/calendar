@@ -178,6 +178,7 @@ ul li{
     .button a {
         border:3px;
         background-color:rgb(207, 216, 43);
+        box-shadow:none;
         color:white;
         font-weight:bold;
         text-align:center;
@@ -192,9 +193,10 @@ ul li{
     }
 
     .overlay{
+        height:100%;
         width:100vw;
-        height:auto;
         background-color: rgba(0, 0, 0, 0.564);
+        background-size:cover;
     }
 
     #delete {
@@ -232,12 +234,7 @@ ul li{
     body{
         background-image:url('pic.jpg');
         background-size:cover;
-    }
-
-    .overlay{
-        height:100%;
-        margin:0;
-        background-color: rgba(0, 0, 0, 0.564);
+        background-repeat:repeat;
     }
 
 }

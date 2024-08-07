@@ -16,8 +16,8 @@
             <p>lenchong metal works</p>
             <div class="float">
             <ul><li> <button onclick="myFunction()" class="dropbtn">calendar</button>
-            <ul class="dropdown">
-                    <li><a id="current" href="System.html">Main</a></li>
+            <ul class="dropdown" id="myDropdown">
+                    <li><a id="current" href="index.html">Main</a></li>
                     <li><a href="System2.html">Shipping</a></li>
                     <li><a href="System3.html">Leave</a></li>
                 </ul>
@@ -37,25 +37,28 @@
     </div>
     </div>
 </div>
+
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+  </script>
+  
     </body>
 
-    <script>
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
-          }
-        }
-        </script>
     
 </html>
+

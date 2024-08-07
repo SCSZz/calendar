@@ -16,7 +16,7 @@
             <p>lenchong metal works</p>
             <div class="float">
             <ul><li><button onclick="myFunction()" class="dropbtn">calendar</button>
-            <ul class="dropdown">
+            <ul class="dropdown" id="myDropdown">
                     <li><a href="index.html">Main</a></li>
                     <li><a id="current" href="System2.html">Shipping</a></li>
                     <li><a href="System3.html">Leave</a></li>
@@ -31,29 +31,28 @@
             <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKuala_Lumpur&bgcolor=%23ffffff&title=Delivery%20%26%20Shipping&src=Y2M1MGM1MDk0NzI1NTc0MGE3YzI2MGZlNjAxMDZiNTY0YTk5MjhlODRhMTA5MDVkMzgyNmY5MDk3ODNiODY2N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2333B679" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
            </div>
            <div class="button">
-            <a href="https://calendar.google.com/" target="_blank">View</a>
-            <a href="https://calendar.google.com/calendar/u/0/r/eventedit?state=%5Bnull%2Cnull%2Cnull%2Cnull%2C%5B13%5D%5D" target="_blank">Add</a>
-            <a id="delete" href="https://calendar.google.com/calendar/u/0/r/trash" target="_blank">Deleted</a>
+            <a id="view" href="https://calendar.google.com/" target="_blank">View</a>
+        <a id="add" href="https://calendar.google.com/calendar/u/0/r/eventedit?state=%5Bnull%2Cnull%2Cnull%2Cnull%2C%5B13%5D%5D" target="_blank">Add</a>
+        <a id="delete" href="https://calendar.google.com/calendar/u/0/r/trash" target="_blank">Deleted</a>
         </div>
     </div>
     </body>
     <script>
-        function myFunction() {
+      function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        window.onclick = function(event) {
+      }
+      
+      window.onclick = function(event) {
           if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+              var dropdowns = document.getElementsByClassName("dropdown");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                  }
               }
-            }
           }
-        }
+      }
+      
         </script>
-    
 </html>

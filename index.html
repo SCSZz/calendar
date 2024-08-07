@@ -15,7 +15,7 @@
             <a href="https://www.lenchong.com/"><img id="lenchong" src="logo.png" width="45vw" height="auto"></a>
             <p>lenchong metal works</p>
             <div class="float">
-            <ul><li><a href="">Calendar</a>
+            <ul><li> <button onclick="myFunction()" class="dropbtn">calendar</button>
             <ul class="dropdown">
                     <li><a id="current" href="System.html">Main</a></li>
                     <li><a href="System2.html">Shipping</a></li>
@@ -38,5 +38,24 @@
     </div>
 </div>
     </body>
+
+    <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
     
 </html>

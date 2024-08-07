@@ -191,15 +191,21 @@ ul li{
         border-width:200px;
     }
 
+    .overlay{
+        width:100vw;
+        height:105%;
+        background-color: rgba(0, 0, 0, 0.564);
+    }
+
     #delete {
         margin-left:2vw;
-        width:200px;
-        height:4%;
+        width:150px;
+        height:40px;
     }
 
     #view , #add {
-        width:120px;
-        height:4%;
+        width:100px;
+        height:40px;
     }
     
 
@@ -223,11 +229,7 @@ ul li{
         transition:0.5s;
         border-width:200px;
     }
-    #delete {
-        margin-left:2vw;
-        width:8%;
-        height:4%;
-    }
+
     .overlay{
         width:100vw;
         height:105%;
@@ -235,13 +237,13 @@ ul li{
     }
     #delete {
         margin-left:2vw;
-        width:120px;
-        height:4%;
+        width:150px;
+        height:40px;
     }
 
     #view , #add {
         width:100px;
-        height:4%;
+        height:40px;
     }
     
 }

@@ -5,7 +5,7 @@
 
 body{
     background-image:url('pic.jpg');
-    background-size:cover;
+    background-size:fill;
     background-repeat: no-repeat;
 }
 @font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
@@ -50,12 +50,10 @@ body{
     box-shadow: 5px 6px 0 rgb(246, 255, 120);
     color:white;
     font-weight:bold;
-    padding:10px;
     text-align:center;
     text-decoration:none;
     border-radius:20px;
     margin-left:2vw;
-    width: 100px;
     font-size:1vw;
     margin-bottom:20px;
     font-family:ubuntu;
@@ -182,7 +180,6 @@ ul li{
         box-shadow: 5px 6px 0 rgb(246, 255, 120);
         color:white;
         font-weight:bold;
-        padding:18px;
         text-align:center;
         text-decoration:none;
         border-radius:20px;
@@ -196,14 +193,19 @@ ul li{
 
     #delete {
         margin-left:2vw;
-        width:8%;
+        width:200px;
+        height:4%;
+    }
+
+    #view , #add {
+        width:120px;
         height:4%;
     }
     
 
 }
 
-@media (max-width: 601px)
+@media (min-width: 601px)
 {
     .button a {
         border:3px;
@@ -211,7 +213,6 @@ ul li{
         box-shadow: 5px 6px 0 rgb(246, 255, 120);
         color:white;
         font-weight:bold;
-        padding:18px;
         text-align:center;
         text-decoration:none;
         border-radius:20px;
@@ -227,4 +228,20 @@ ul li{
         width:8%;
         height:4%;
     }
+    .overlay{
+        width:100vw;
+        height:105%;
+        background-color: rgba(0, 0, 0, 0.564);
+    }
+    #delete {
+        margin-left:2vw;
+        width:120px;
+        height:4%;
+    }
+
+    #view , #add {
+        width:100px;
+        height:4%;
+    }
+    
 }

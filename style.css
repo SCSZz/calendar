@@ -59,11 +59,12 @@ body{
     color:white;
     font-weight:bold;
     text-align:center;
+    align-content:center;
+    align-items: center;
     text-decoration:none;
     border-radius:20px;
     margin-left:2vw;
     font-size:1vw;
-    margin-bottom:20px;
     font-family:ubuntu;
     transition:0.5s;
 }

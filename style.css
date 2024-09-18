@@ -11,6 +11,7 @@ body {
     background-attachment: fixed;
     min-height: 100vh;
 }
+
 @font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
 .border {
     text-align:center;
@@ -181,6 +182,12 @@ ul li{
 
 @media (max-width: 600px)
 {
+    body {
+        background-image: url('pic.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .button a {
         border:3px;
         background-color:rgb(207, 216, 43);
@@ -192,7 +199,7 @@ ul li{
         text-decoration:none;
         border-radius:20px;
         margin-left:2vw;
-        font-size:1vw;
+        font-size:15px;
         font-family:ubuntu;
         transition:0.5s;
     }

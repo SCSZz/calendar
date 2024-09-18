@@ -1,261 +1,233 @@
 * {
-    padding:0px;
-    margin:0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     background-image: url('pic.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     min-height: 100vh;
+    font-family: ubuntu;
+}
+@font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.564); 
+    z-index: -1; 
 }
 
-@font-face{font-family:ubuntu;src:url('Ubuntu/Ubuntu-Bold.ttf')}
 .border {
-    text-align:center;
-    display:flex;
+    text-align: center;
+    display: flex;
     flex-direction: row;
-    width:100vw;
+    width: 100vw;
     height: 10%;
-   background-color:rgb(235, 239, 164);
-   margin-top:0;
-   margin-left:0;
-   border-bottom:5px solid rgba(0, 0, 0, 0.511);
-   align-items: center;
+    background-color: rgb(235, 239, 164);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.511);
+    align-items: center;
 }
 
 .main {
-    display:flex;
-    flex-direction:column;
-    margin-top:30px;
-    margin-left:8vw;
-    height:100vh;
+    margin-top: 30px;
+    margin-left: 8vw;
+    height: auto;
+    z-index: 1;
+    position: relative;
 }
 
 .button {
-    display:flex;
-    flex-direction:row;
-    font-size:20px;
-    font-family:ubuntu;
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
     text-transform: uppercase;
-    color:black;
-    margin-top:20px;
-
+    margin-top: 20px;
 }
 
-.dropbtn{
-    border:0px;
-    background:black;
+.dropbtn {
+    border: 0px;
+    background: black;
+    color: white;
+    padding: 10px;
 }
 
 .button a {
-    border:3px;
-    background-color:rgb(207, 216, 43);
+    border: 3px;
+    background-color: rgb(207, 216, 43);
     box-shadow: 5px 6px 0 rgb(246, 255, 120);
-    padding:20px;
-    color:white;
-    font-weight:bold;
-    text-align:center;
-    line-height: 0px;
-    text-decoration:none;
-    border-radius:20px;
-    margin-left:2vw;
-    font-size:1vw;
-    font-family:ubuntu;
-    transition:0.5s;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-left: 2vw;
+    font-size: 1vw;
+    transition: 0.5s;
 }
 
-
-.button a:hover{
-    background-color:black;
+.button a:hover {
+    background-color: black;
     box-shadow: 5px 6px 0 rgb(58, 58, 58);
 }
 
 .border #lenchong {
-    margin-left:5vw;
+    margin-left: 5vw;
 }
 
 .border #guide {
-    margin-left:2vw;
+    margin-left: 2vw;
 }
+
 .border p {
-    margin-left:2vw;
+    margin-left: 2vw;
     font-size: 2vw;
-    color:rgb(0, 0, 0);
-    text-transform:uppercase;
-    font-family:ubuntu;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: ubuntu;
 }
+
 .float {
     align-items: center;
-    display:flex;
+    display: flex;
     flex-direction: row;
-    position:absolute;
-    margin-left:70vw;
-
-}
-.overlay {
-    width: 100vw;
-    height: 135vh;
-    background-color: rgba(0, 0, 0, 0.564);
+    position: absolute;
+    margin-left: 70vw;
 }
 
-ul{
-    list-style:none;
-    background-color:#000000;
+ul {
+    list-style: none;
+    background-color: #000000;
     text-align: center;
-    width:100%;
-    
+    width: 100%;
 }
 
-ul li{
-    display:inline-block;
-    position:relative;
-    width:100%;
-    height:auto;
-
+ul li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-ul li button,ul li a {
-    display:block;
-    font-size:1.5vw;
-    color:white;
-    text-decoration:none;
-    width:20vw;
-    font-family:ubuntu;
-    text-transform:uppercase;
-    transition:0.5s;
-    height:14vh;
-    align-content:center;
+ul li button, ul li a {
+    display: block;
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+    width: 20vw;
+    font-family: ubuntu;
+    text-transform: uppercase;
+    transition: 0.5s;
+    height: 14vh;
+    align-content: center;
 }
 
 ul.dropdown {
-    width:100%;
-    background:rgba(0, 0, 0, 0.719);
-    position:absolute;
-    display:none;
-    z-index:999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.719);
+    position: absolute;
+    display: none;
+    z-index: 999;
 }
 
 ul.dropdown li {
-    display:block;
-    background:rgba(0, 0, 0, 0.76);
-    margin:2px 0px;
+    display: block;
+    background: rgba(0, 0, 0, 0.76);
+    margin: 2px 0;
 }
 
-ul li a:hover{
-    background:rgb(240, 237, 67);
-    color:black;
+ul li a:hover {
+    background: rgb(240, 237, 67);
+    color: black;
 }
 
-ul li button:hover{
-    background:rgb(240, 237, 67);
-    color:black;
+ul li button:hover {
+    background: rgb(240, 237, 67);
+    color: black;
 }
 
-ul li:hover ul.dropdown{
-    display:block;
+ul li:hover ul.dropdown {
+    display: block;
 }
 
-ul li{
-    display:block;
+ul li {
+    display: block;
 }
 
 #delete {
-    margin-left:48vw;
-    width:8%;
-    height:4%;
+    margin-left: 48vw;
+    width: 8%;
+    height: 4%;
 }
 
-#view , #add {
-    width:8%;
-    height:4%;
+#view, #add {
+    width: 8%;
+    height: 4%;
 }
 
-#current{
-    background:rgb(240, 237, 67);
-    color:black;
+#current {
+    background: rgb(240, 237, 67);
+    color: black;
 }
 
-.show {display: block;}
+.show {
+    display: block;
+}
 
-@media (max-width: 600px)
-{
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
     .button a {
-        border:3px;
-        background-color:rgb(207, 216, 43);
-        padding:10px;
-        color:white;
-        font-weight:bold;
-        text-align:center;
-        line-height: 0px;
-        text-decoration:none;
-        border-radius:20px;
-        margin-left:2vw;
-        font-size:15px;
-        font-family:ubuntu;
-        transition:0.5s;
+        padding: 10px;
+        font-size: 12px;
     }
 
-    .overlay{
+    .border p {
+        font-size: 15px;
+    }
+
+    .button a {
+        border: 3px;
+        background-color: rgb(207, 216, 43);
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-left: 2vw;
+        font-size: 12px;
+        font-family: ubuntu;
+        transition: 0.5s;
+    }
+
+    .overlay {
         position: fixed;
         top: 0;
         left: 0;
-        height:100vh;
-        width:100vw;
+        height: 100vh;
+        width: 100vw;
         background-color: rgba(0, 0, 0, 0.564);
-        background-size:cover;
-        z-index:99;
+        background-size: cover;
+        z-index: -1;
     }
 
     #delete {
-        margin-left:2vw;
-        width:100px;
-        height:10px;
+        margin-left: 2vw;
+        width: 100px;
+        height: 10px;
     }
 
-    #view , #add {
-        width:80px;
-        height:10px;
-    }
-    
-    .border p {
-        margin-left:2vw;
-        font-size: 15px;
-        color:rgb(0, 0, 0);
-        text-transform:uppercase;
-        font-family:ubuntu;
+    #view, #add {
+        width: 80px;
+        height: 10px;
     }
 
-    ul li button,ul li a {
-        display:block;
-        font-size:10px;
-        color:white;
-        text-decoration:none;
-        width:20vw;
-        font-family:ubuntu;
-        text-transform:uppercase;
-        transition:0.5s;
-        height:10vh;
-        align-content: center;
+    ul li button, ul li a {
+        font-size: 10px;
+        height: 10vh;
     }
-
-    body {
-        background-image: url('pic.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        min-height: 100vh;
-    }
-
-    body,html{
-        margin:0;
-        padding:0;
-        height:100%;
-        width:100%;
-        overflow:hidden;
-    }
-
 }

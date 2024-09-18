@@ -2,12 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="image/x-icon" href="logo.png">
-        <title>
-            Calendar
-        </title>
+        <title>Calendar</title>
     </head>
     <body>
         <div class="overlay">
@@ -15,44 +13,50 @@
             <a href="https://www.lenchong.com/"><img id="lenchong" src="logo.png" width="45vw" height="auto"></a>
             <p>lenchong metal works</p>
             <div class="float">
-            <ul><li><button onclick="myFunction()" class="dropbtn">calendar</button>
-            <ul class="dropdown" id="myDropdown">
+            <ul>
+                <li><button onclick="myFunction()" class="dropbtn">calendar</button>
+                <ul class="dropdown" id="myDropdown">
                     <li><a href="system.html">Main</a></li>
                     <li><a id="current" href="System2.html">Shipping</a></li>
                     <li><a href="System3.html">Leave</a></li>
                 </ul>
-            </li>
+                </li>
             </ul>
             <a href="Introduction.html" id="guide"><img src="qm.png" width="30px" height="auto"></a>
-                </div>
-                </div>
-    <div class="main">
-        <div class="Calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKuala_Lumpur&bgcolor=%23ffffff&title=Delivery%20%26%20Shipping&src=Y2M1MGM1MDk0NzI1NTc0MGE3YzI2MGZlNjAxMDZiNTY0YTk5MjhlODRhMTA5MDVkMzgyNmY5MDk3ODNiODY2N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2333B679" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
-           </div>
-           <div class="button">
-            <a id="view" href="https://calendar.google.com/" target="_blank">View</a>
-        <a id="add" href="https://calendar.google.com/calendar/u/0/r/eventedit?state=%5Bnull%2Cnull%2Cnull%2Cnull%2C%5B13%5D%5D" target="_blank">Add</a>
-        <a id="delete" href="https://calendar.google.com/calendar/u/0/r/trash" target="_blank">Deleted</a>
+            </div>
         </div>
-    </div>
-    </body>
-    <script>
-      function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-      }
-      
-      window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown");
-              for (var i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                      openDropdown.classList.remove('show');
-                  }
-              }
-          }
-      }
-      
+        <div class="main">
+            <div class="Calendar">
+                <iframe id="calendarIframe" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Asia%2FKuala_Lumpur&bgcolor=%23ffffff&title=Delivery%20%26%20Shipping&src=Y2M1MGM1MDk0NzI1NTc0MGE3YzI2MGZlNjAxMDZiNTY0YTk5MjhlODRhMTA5MDVkMzgyNmY5MDk3ODNiODY2N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%2333B679" style="border-width:0" width="90%" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="button">
+                <a id="view" href="https://calendar.google.com/" target="_blank">View</a>
+                <a id="add" href="https://calendar.google.com/calendar/u/0/r/eventedit?state=%5Bnull%2Cnull%2Cnull%2Cnull%2C%5B13%5D%5D" target="_blank">Add</a>
+                <a id="delete" href="https://calendar.google.com/calendar/u/0/r/trash" target="_blank">Deleted</a>
+            </div>
+        </div>
+
+        <script>
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                    var dropdowns = document.getElementsByClassName("dropdown");
+                    for (var i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+
+            // Function to reload the iframe every 30 seconds
+            setInterval(function() {
+                document.getElementById('calendarIframe').src += '';
+            }, 30000); // 30 seconds = 30000 milliseconds
         </script>
+    </body>
 </html>

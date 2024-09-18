@@ -129,7 +129,6 @@ ul li button,ul li a {
     transition:0.5s;
     height:60px;
     align-content:center;
-    border-radius:10px;
 }
 
 ul.dropdown {

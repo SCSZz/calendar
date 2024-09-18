@@ -96,9 +96,9 @@ body{
     margin-left:70vw;
 
 }
-.overlay{
-    width:100vw;
-    height:150vh;
+.overlay {
+    width: 100vw;
+    height: 135vh;
     background-color: rgba(0, 0, 0, 0.564);
 }
 
@@ -256,5 +256,3 @@ ul li{
         width:100%;
         overflow:hidden;
     }
-
-}

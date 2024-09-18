@@ -28,9 +28,7 @@ body{
     flex-direction:column;
     margin-top:30px;
     margin-left:8vw;
-    position:fixed;
-    top:0;
-    left:0;
+    height:100vh;
 }
 
 .main .calendar {
@@ -97,6 +95,11 @@ body{
     margin-left:70vw;
 
 }
+.overlay{
+    width:100vw;
+    height:150vh;
+    background-color: rgba(0, 0, 0, 0.564);
+}
 
 ul{
     list-style:none;
@@ -124,7 +127,7 @@ ul li button,ul li a {
     text-transform:uppercase;
     transition:0.5s;
     height:60px;
-    align-content: center;
+    align-content:center;
 }
 
 ul.dropdown {
